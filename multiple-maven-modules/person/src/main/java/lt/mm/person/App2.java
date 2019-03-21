@@ -1,4 +1,4 @@
-package se.spp.person;
+package lt.mm.person;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

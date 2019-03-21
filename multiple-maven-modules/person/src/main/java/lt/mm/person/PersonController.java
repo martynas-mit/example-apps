@@ -1,19 +1,19 @@
-package se.spp.payment;
+package lt.mm.person;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import se.spp.common.Payment;
+import lt.mm.common.Person;
 
 @RestController
-@RequestMapping("/payment")
-public class PaymentController {
+@RequestMapping("/person")
+public class PersonController {
 
     @GetMapping("/get/{id}")
-    public Payment getPayment(@PathVariable Long id) {
+    public Person getperson(@PathVariable Long id) {
         System.out.println(id);
-        return new Payment();
+        return new Person();
     }
 
 }

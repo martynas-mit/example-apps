@@ -1,6 +1,6 @@
-package se.spp.common;
+package lt.mm.common;
 
-public class Person {
+public class Payment {
 
     private Long id;
 
