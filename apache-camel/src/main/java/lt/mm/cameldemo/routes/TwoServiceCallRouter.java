@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DemoRouter extends RouteBuilder {
+public class TwoServiceCallRouter extends RouteBuilder {
 
     private final ServiceOne serviceOne;
     private final ServiceTwo serviceTwo;
 
     @Autowired
-    public DemoRouter(ServiceOne serviceOne, ServiceTwo serviceTwo) {
+    public TwoServiceCallRouter(ServiceOne serviceOne, ServiceTwo serviceTwo) {
         this.serviceOne = serviceOne;
         this.serviceTwo = serviceTwo;
     }

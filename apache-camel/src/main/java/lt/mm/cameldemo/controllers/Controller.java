@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/cameldemo")
+@RequestMapping("/api")
 public class Controller {
 
     private final ProducerTemplate producerTemplate;
@@ -21,11 +21,16 @@ public class Controller {
         this.consumerTemplate = consumerTemplate;
     }
 
-    @GetMapping("/get")
+    @GetMapping("/getDemoResponse")
     public DemoResponse getDemoResponse() {
         producerTemplate.sendBody("direct:getDemoResponse", "");
         DemoResponse response = consumerTemplate.receiveBody("seda:getDemoResponseResult", DemoResponse.class);
         return response;
+    }
+
+    @GetMapping("/getPassword")
+    public String getPassword() {
+        return producerTemplate.requestBody("direct:getPsw", "", String.class);
     }
 
 }
