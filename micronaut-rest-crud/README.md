@@ -11,8 +11,3 @@
 ```
 
 * **GET** http://localhost:8081/api/person/30101010001
-
-
-
-
-

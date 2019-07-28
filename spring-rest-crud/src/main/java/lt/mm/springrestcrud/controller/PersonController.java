@@ -14,12 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/api")
 public class PersonController {
 
-    private final PersonService personService;
-
     @Autowired
-    public PersonController(PersonService personService) {
-        this.personService = personService;
-    }
+    private PersonService personService;
 
     @PostMapping("/person")
     public Person create(@RequestBody Person person) {
