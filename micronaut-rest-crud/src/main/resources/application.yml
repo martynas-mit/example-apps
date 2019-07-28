@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: micronaut-rest-crud
+  server:
+    port: 8081
+
+datasources:
+  default:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+
+jpa:
+  default:
+    packages-to-scan:
+      - 'lt.mm.micronautrestcrud'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true

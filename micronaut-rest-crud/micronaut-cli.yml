@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: lt.mm
+---
+testFramework: junit
+sourceLanguage: java
