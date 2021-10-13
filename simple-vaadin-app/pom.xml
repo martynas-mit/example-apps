@@ -20,7 +20,7 @@
 	<properties>
 		<java.version>8</java.version>
 		<vaadin.version>13.0.11</vaadin.version>
-		<vaadin-server.version>8.12.4</vaadin-server.version>
+		<vaadin-server.version>8.14.1</vaadin-server.version>
 	</properties>
 
 	<dependencies>
